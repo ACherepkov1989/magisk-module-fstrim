@@ -5,3 +5,11 @@ MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode
 # More info in the main Magisk thread
+
+sleep 360
+
+LOG_FILE=/data/local/tmp/fstrim.log
+
+fstrim -v /cache | tee -a $LOG_FILE;
+fstrim -v /data | tee -a $LOG_FILE;
+fstrim -v /system | tee -a $LOG_FILE;

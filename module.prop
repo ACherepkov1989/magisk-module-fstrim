@@ -1,7 +1,7 @@
-id=template
-name=Template Module
+id=fstrim
+name=fstrim
 version=v1
 versionCode=1
-author=topjohnwu
-description=A short description
+author=GreyLeshy
+description=fstrim restores the write speed of internal memory
 template=1400
