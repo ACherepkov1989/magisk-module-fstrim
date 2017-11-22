@@ -8,8 +8,6 @@ MODDIR=${0%/*}
 
 sleep 360
 
-LOG_FILE=/data/local/tmp/fstrim.log
-
-fstrim -v /cache | tee -a $LOG_FILE;
-fstrim -v /data | tee -a $LOG_FILE;
-fstrim -v /system | tee -a $LOG_FILE;
+fstrim -v /cache
+fstrim -v /data
+fstrim -v /system
