@@ -5,3 +5,9 @@ MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode
 # More info in the main Magisk thread
+
+sleep 200
+
+fstrim -v /cache
+fstrim -v /data
+fstrim -v /system

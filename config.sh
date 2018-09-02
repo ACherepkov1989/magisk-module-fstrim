@@ -31,7 +31,7 @@ PROPFILE=false
 POSTFSDATA=false
 
 # Set to true if you need late_start service script
-LATESTARTSERVICE=false
+LATESTARTSERVICE=true
 
 ##########################################################################################
 # Installation Message
@@ -40,9 +40,9 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
-  ui_print "*******************************"
+  ui_print "**************************"
+  ui_print "          fstrim          "
+  ui_print "**************************"
 }
 
 ##########################################################################################
